@@ -1030,6 +1030,65 @@
       .hero-image-container { width: 220px; height: 220px; }
       .hero-image { width: 220px; height: 220px; }
     }
+    <style>
+/* Project 1 - Purple & Pink */
+.project-card.reveal-delay-1 {
+    background: linear-gradient(135deg, #251442, #702963);
+    border: 1px solid #f472b6;
+    border-radius: 20px;
+}
+
+/* Project 2 - Blue & Cyan */
+.project-card.reveal-delay-2 {
+    background: linear-gradient(135deg, #071d3b, #075985);
+    border: 1px solid #22d3ee;
+    border-radius: 20px;
+}
+
+/* Project 3 - Neon Purple & Teal */
+.ai-predictor-card {
+    background: linear-gradient(135deg, #10172d, #30205b);
+    border: 1px solid #7565ff;
+    border-radius: 20px;
+}
+
+/* Common animation */
+.project-card.reveal {
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.project-card.reveal:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px #0005;
+}
+
+/* Text colours */
+.project-card h3 {
+    color: #ffffff;
+}
+
+.project-card .project-desc,
+.project-card .project-features li {
+    color: #e5e7eb;
+}
+
+/* Technology tags */
+.project-card .project-tech span {
+    display: inline-block;
+    background: #ffffff18;
+    color: #ffffff;
+    border: 1px solid #ffffff35;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 3px;
+}
+
+/* Project 3 special glow */
+.ai-predictor-card:hover {
+    border-color: #42f5e8;
+    box-shadow: 0 0 25px #42f5e855;
+}
+</style>
   </style>
 </head>
 <body>
@@ -1278,6 +1337,42 @@
             <a href="https://github.com/Harshitha-168" class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
           </div>
         </div>
+        <!-- Project 3 : AI Student Performance Predictor -->
+<div class="project-card reveal reveal-delay-3">
+    <div class="project-header">
+        <span class="project-category">AI Project · Academic Analytics</span>
+        <h3>AI Student Performance Predictor</h3>
+        <p class="project-desc">
+            A working prototype that analyzes student marks, attendance,
+            and assignments to identify academic risks and support
+            better learning through personalized study recommendations.
+        </p>
+    </div>
+
+    <ul class="project-features">
+        <li>Student marks, attendance, and assignment management</li>
+        <li>AI-based academic performance and risk prediction</li>
+        <li>Personalized study plans and what-if simulation</li>
+        <li>Role-based dashboards for Admin, Faculty, and Students</li>
+        <li>Performance analytics, progress tracking, and reports</li>
+    </ul>
+
+    <div class="project-tech">
+        <span>Artificial Intelligence</span>
+        <span>Machine Learning</span>
+        <span>Data Analytics</span>
+        <span>Web Development</span>
+    </div>
+
+    <div class="project-actions">
+        <a href="https://github.com/Harshitha-168/AI-Students-Performance-predictor"
+           class="btn btn-primary btn-sm"
+           target="_blank" rel="noopener noreferrer">
+           View Project ↗
+        </a>
+    </div>
+</div>
+        
 
       </div>
     </div>
@@ -1334,6 +1429,7 @@
             <p>Active on LeetCode &amp; HackerRank</p>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
